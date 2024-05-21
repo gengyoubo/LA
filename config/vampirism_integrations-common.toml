@@ -1,0 +1,13 @@
+
+[Compatibility]
+
+	[Compatibility.vampirism]
+		enable_compat_vampirism = true
+		disable_integrations_version_check = false
+
+	[Compatibility.tconstruct]
+		enable_compat_tconstruct = true
+
+	[Compatibility.crafttweaker]
+		enable_compat_crafttweaker = true
+

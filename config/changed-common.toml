@@ -1,0 +1,5 @@
+#Choose your domain. Use "raw.fastgit.org" if your ISP blocks github.
+githubDomain = "raw.githubusercontent.com"
+#Compatibility is weird, you can disable displaying player's patronage to Changed:MC here
+displayPatronage = true
+

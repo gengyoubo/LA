@@ -1,0 +1,5 @@
+
+[MusicPlayer]
+	#allow the music player to play boss themes
+	"Music Player" = true
+
