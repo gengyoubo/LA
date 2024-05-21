@@ -1,0 +1,2432 @@
+{
+	id: "34624F0C9E355742"
+	group: "0B9EFB5D6DB39A8B"
+	order_index: 0
+	filename: "34624F0C9E355742"
+	title: "新手教程篇"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: -0.5d
+			description: ["如果开始玩这个整合包需要开的指令"]
+			id: "11DE4297F3E0D1EF"
+			tasks: [{
+				id: "3AC1D17497D07BAE"
+				type: "checkmark"
+				title: "你好"
+			}]
+			rewards: [
+				{
+					id: "1E655F20D1060222"
+					type: "command"
+					title: "兽化的时候不会失去意识"
+					icon: "minecraft:command_block"
+					auto: "enabled"
+					command: "/gamerule changed:keepConscious true"
+				}
+				{
+					id: "4BD8EE83CB8DB1B7"
+					type: "command"
+					title: "永久兽化"
+					icon: "minecraft:command_block"
+					auto: "enabled"
+					command: "/gamerule changed:keepForm true"
+				}
+				{
+					id: "11F38D8B11EC84E8"
+					type: "command"
+					title: "死亡不掉落"
+					icon: "minecraft:command_block"
+					auto: "enabled"
+					command: "/gamerule keepInventory true"
+				}
+				{
+					id: "25FB8F578B62AF4C"
+					type: "command"
+					title: "胶液不扩散"
+					icon: "minecraft:command_block"
+					auto: "enabled"
+					command: "/gamerule changed:latexGrowthRate 0"
+				}
+				{
+					id: "6C32A032AD4309D4"
+					type: "command"
+					icon: "minecraft:command_block"
+					auto: "enabled"
+					command: "/curios reset @p"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			description: ["如果想知道发生了什么事的话请看故事线"]
+			dependencies: ["11DE4297F3E0D1EF"]
+			id: "0EAE3428F6ECB2DA"
+			tasks: [{
+				id: "1FAF4C5E844FFC9C"
+				type: "checkmark"
+				title: "欢迎来到胶兽的世界"
+			}]
+			rewards: [{
+				id: "18BB8F0AEB1E5650"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["被胶液生物打败是不会直接死亡"]
+			dependencies: ["11DE4297F3E0D1EF"]
+			id: "01BE1EA633EA5F4C"
+			tasks: [{
+				id: "29CF3503B14FC6EC"
+				type: "checkmark"
+				title: "兽化时不会失去意识是什么？"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["死亡时不会变成人类"]
+			dependencies: ["11DE4297F3E0D1EF"]
+			id: "636F86378B896E8B"
+			tasks: [{
+				id: "0733E3E10B59CC84"
+				type: "checkmark"
+				title: "永久兽化是什么？"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			description: ["字面意思"]
+			dependencies: ["11DE4297F3E0D1EF"]
+			id: "5623D24086D12995"
+			tasks: [{
+				id: "3C722DE616007900"
+				type: "checkmark"
+				title: "胶液不扩散是什么？"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			dependencies: ["0EAE3428F6ECB2DA"]
+			id: "56229E8EA3BF29B8"
+			tasks: [{
+				id: "7B2FD709CAA953FC"
+				type: "checkmark"
+				title: "点击可开始故事线"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			description: ["这句话无论在哪都通用，胶兽的世界也不例外"]
+			dependencies: ["0EAE3428F6ECB2DA"]
+			id: "4F08EE80B6D02B39"
+			tasks: [{
+				id: "30E9A2439686BA47"
+				type: "item"
+				title: "“要致富，先撸树”"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 10L
+			}]
+			rewards: [{
+				id: "6094E2C758A80EFC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			description: [
+				"啊？你还会不小心变成胶兽？"
+				"我还以为你很喜欢这个样子呢"
+				"既然那么不喜欢，那我给你三个可以变成人类的针吧"
+			]
+			dependencies: ["0EAE3428F6ECB2DA"]
+			id: "0A3586D061113F04"
+			tasks: [{
+				id: "7F9B142B1C223222"
+				type: "checkmark"
+				title: "糟糕！我不小心变成了胶兽了怎么办？"
+			}]
+			rewards: [{
+				id: "08F5F10FD60D1E1C"
+				type: "item"
+				auto: "enabled"
+				item: {
+					id: "changed_addon:syringewithlitixcammonia"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "这是？工作台"
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["4F08EE80B6D02B39"]
+			id: "38ED4354542858BD"
+			tasks: [{
+				id: "5B1EDA27048991BC"
+				type: "item"
+				title: "Any #forge:workbenches"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:workbenches"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6313E7E37B1DAE36"
+				type: "xp"
+				xp: 500
+			}]
+		}
+		{
+			title: "石器时代"
+			x: 5.0d
+			y: -0.5d
+			dependencies: ["38ED4354542858BD"]
+			id: "037E7F2DD5F0DB37"
+			tasks: [
+				{
+					id: "23E8D0791507BADB"
+					type: "item"
+					title: "Any #forge:cobblestone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+				}
+				{
+					id: "38D8036214E05C8D"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+			]
+			rewards: [{
+				id: "262CD3DD72B660B4"
+				type: "item"
+				item: "minecraft:coal"
+				count: 32
+			}]
+		}
+		{
+			title: "趁热打铁"
+			x: 6.5d
+			y: -0.5d
+			description: ["你看！这铁还是温的呢"]
+			dependencies: ["037E7F2DD5F0DB37"]
+			id: "74445F4D1BE1DDEA"
+			tasks: [{
+				id: "7750C5EC0C510EAB"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 10L
+			}]
+			rewards: [{
+				id: "61E235A74ED96188"
+				type: "item"
+				item: "minecraft:coal"
+				count: 32
+			}]
+		}
+		{
+			title: "黄金矿工"
+			x: 8.0d
+			y: -0.5d
+			dependencies: ["74445F4D1BE1DDEA"]
+			id: "1A984FC05B83EDBD"
+			tasks: [{
+				id: "451A51E35EDB7932"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+			rewards: [{
+				id: "7B0DC697C1620B32"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 5
+			}]
+		}
+		{
+			title: "哦耶！是钻石"
+			x: 8.0d
+			y: -1.5d
+			dependencies: ["74445F4D1BE1DDEA"]
+			id: "0B42BC9CCEA00FE1"
+			tasks: [{
+				id: "3A5B2D1E0967ED03"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+			rewards: [{
+				id: "3D00CC1703C12FC3"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 10
+			}]
+		}
+		{
+			title: "红石科技"
+			x: 8.0d
+			y: 0.5d
+			dependencies: ["74445F4D1BE1DDEA"]
+			id: "380F2CDD17D262C3"
+			tasks: [{
+				id: "0B005477482F756A"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+			rewards: [{
+				id: "72E51DBBE54014D8"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 3
+			}]
+		}
+		{
+			title: "地狱门，启动！"
+			x: 9.5d
+			y: -0.5d
+			description: ["解锁等价交换篇"]
+			dependencies: [
+				"380F2CDD17D262C3"
+				"1A984FC05B83EDBD"
+				"0B42BC9CCEA00FE1"
+			]
+			id: "0441BEB53AD1F43F"
+			tasks: [{
+				id: "173286552FC495D6"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			title: "你找的到吗？"
+			x: 11.0d
+			y: -1.5d
+			dependencies: ["0441BEB53AD1F43F"]
+			id: "578797D8057E36FA"
+			tasks: [{
+				id: "5002DDC77E779464"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+			rewards: [{
+				id: "6BD2CDAB6D18AC6A"
+				type: "item"
+				item: "minecraft:ancient_debris"
+				count: 10
+			}]
+		}
+		{
+			title: "这么热的东西还需要烧？"
+			x: 12.5d
+			y: -1.5d
+			dependencies: ["578797D8057E36FA"]
+			id: "031615326FC74B5D"
+			tasks: [{
+				id: "555397A493689057"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+			}]
+			rewards: [{
+				id: "7A6FBFC8311E1B8C"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 5
+			}]
+		}
+		{
+			title: "还需要在加工亿下"
+			x: 14.0d
+			y: -1.5d
+			dependencies: ["031615326FC74B5D"]
+			id: "346A1DADFD7685A1"
+			tasks: [{
+				id: "6FC0AB28A404AA7B"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+			rewards: [{
+				id: "77ABF704DAF14E6B"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "从黑曜石里的魔法"
+			x: 14.0d
+			y: -2.5d
+			dependencies: ["0B42BC9CCEA00FE1"]
+			id: "3D94FA0795152265"
+			tasks: [{
+				id: "2132EB0019EF1A61"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "5C5565DFA84B5CE2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "你知不知道地狱堡垒是什么"
+			x: 11.0d
+			y: -0.5d
+			dependencies: ["0441BEB53AD1F43F"]
+			id: "28E212F206D58005"
+			tasks: [{
+				id: "679B5A97AE87A2D0"
+				type: "item"
+				item: "minecraft:nether_wart"
+				count: 5L
+			}]
+		}
+		{
+			title: "成了！"
+			x: 14.0d
+			y: -0.5d
+			dependencies: ["28E212F206D58005"]
+			id: "1A11BB2C584A3A9D"
+			tasks: [{
+				id: "1C88DD7AD8E144B9"
+				type: "item"
+				item: "minecraft:brewing_stand"
+			}]
+		}
+		{
+			title: "末地门，启动！"
+			x: 15.5d
+			y: -0.5d
+			dependencies: [
+				"346A1DADFD7685A1"
+				"3D94FA0795152265"
+				"1A11BB2C584A3A9D"
+			]
+			dependency_requirement: "one_completed"
+			id: "62F3CEF3B2F62DB9"
+			tasks: [{
+				id: "1FA9D87EC8A73DCE"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			title: "把龙干掉，你的任务就结束了！"
+			x: 17.0d
+			y: -0.5d
+			dependencies: ["62F3CEF3B2F62DB9"]
+			id: "2639AECD9250EE58"
+			tasks: [{
+				id: "344829B71599ECD9"
+				type: "kill"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "476B3E2AD827102D"
+					type: "item"
+					item: "minecraft:diamond_block"
+				}
+				{
+					id: "0A40D5E827C67BBB"
+					type: "item"
+					item: "minecraft:netherite_block"
+				}
+				{
+					id: "5DBD2C8A729B010E"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: [
+				"在很久以前，人类世界爆发了一种病毒。它的名字叫做“苍白”病毒。这个病毒和以往的病毒不一样，用常规的医疗手段是攻不破的。"
+				"这个病毒经过科学家研究发现，这个病毒专门攻击DNA（脱氧核糖核酸）有缺陷的地方。并且这个病毒的感染的方式有很多种。于是，大部分人类都死光了。"
+				"科学家们想，如果能修改DNA的话是不是就不会被病毒感染呢。于是，胶兽就是这样诞生了。"
+			]
+			dependencies: ["56229E8EA3BF29B8"]
+			id: "774A648C6469BE1D"
+			tasks: [{
+				id: "6D5E4C3ADE55E175"
+				type: "checkmark"
+				title: "故事1"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			description: [
+				"科学家们研究胶兽发现，如果让胶兽trasfur人类的话会让人类变成胶兽的DNA，变得没有意识。"
+				"最开始研究的是黑色的胶兽，但是因为效果不好反而去研究它的突变体白色的胶兽。"
+			]
+			dependencies: [
+				"774A648C6469BE1D"
+				"037E7F2DD5F0DB37"
+			]
+			id: "70A303B1DFC55F3F"
+			tasks: [{
+				id: "0CD802CF378F5648"
+				type: "checkmark"
+				title: "故事2"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			description: ["白色的胶兽和黑色的胶兽不一样，可以模仿任何东西，但是可能能保留意识。于是开始研究如何保留意识"]
+			dependencies: [
+				"70A303B1DFC55F3F"
+				"74445F4D1BE1DDEA"
+			]
+			id: "5653AE335E0A15C2"
+			tasks: [{
+				id: "3C8E979C29858446"
+				type: "checkmark"
+				title: "故事3"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			description: [
+				"有一天，实验室发生了爆炸，导致胶兽们都逃出去了，根据幸存的人说，还有被胶兽污染的白胶森林和黑胶森林。"
+				"本来僵尸和骷髅，尤其是苦力怕什么的怪物就够可怕了！居然还有胶兽"
+			]
+			dependencies: [
+				"5653AE335E0A15C2"
+				"1A984FC05B83EDBD"
+			]
+			id: "71AC3C011EE6E376"
+			tasks: [{
+				id: "5209B0C154A20E76"
+				type: "checkmark"
+				title: "故事4"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["0EAE3428F6ECB2DA"]
+			id: "3D8A04B60C1E99CE"
+			tasks: [{
+				id: "68A561DB5A5593E8"
+				type: "checkmark"
+				title: "点击可开启提示"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			description: ["你可以被胶兽兽化，但是最好小心如果没有专用的药的话不要轻易去做"]
+			dependencies: [
+				"3D8A04B60C1E99CE"
+				"71AC3C011EE6E376"
+				"1A984FC05B83EDBD"
+			]
+			id: "55624E9A81359667"
+			tasks: [{
+				id: "5DA3405C49EC3F76"
+				type: "checkmark"
+				title: "提示1"
+			}]
+		}
+		{
+			title: "我自救不了！！！"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "???"
+			description: [
+				"你先别用！万一有需要的时候呢？"
+				"不是什么裤子都可以穿的！！！比如下面的"
+				"{image:changed:textures/items/benign_pants.png width:100 height:100 align:1}"
+				"{image:changed:textures/items/pink_pants.png width:100 height:100 align:1}"
+			]
+			dependencies: ["0A3586D061113F04"]
+			can_repeat: true
+			id: "6DD578854A589184"
+			tasks: [{
+				id: "0CA1FCB98D305A36"
+				type: "item"
+				item: {
+					id: "changed_addon:syringewithlitixcammonia"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7EEE6B7E9D2E456D"
+				type: "command"
+				command: "/untransfur @p"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["11DE4297F3E0D1EF"]
+			can_repeat: true
+			id: "1A5C91265E12D585"
+			tasks: [{
+				id: "403BBFDAFC95C68A"
+				type: "checkmark"
+				title: "饰品栏重置"
+			}]
+			rewards: [
+				{
+					id: "63AF89CE04E7AD35"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set back @p 5"
+				}
+				{
+					id: "28668E60DBC99A30"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set belt @p 5"
+				}
+				{
+					id: "2E6FB2B1251B3367"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set body @p 5"
+				}
+				{
+					id: "0C37088F3375C6A8"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set bracelet @p 5"
+				}
+				{
+					id: "1182017EE8C6F67F"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set charm @p 5"
+				}
+				{
+					id: "16C64423E7ACF29F"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set head @p 5"
+				}
+				{
+					id: "515C0457C69CE45D"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set klein_star @p 5"
+				}
+				{
+					id: "4BB9CC1B6A94B7D7"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set necklace @p 5"
+				}
+				{
+					id: "4C0BEE456B76D5F6"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set pin @p 5"
+				}
+				{
+					id: "21921BF88B02C20F"
+					type: "command"
+					auto: "enabled"
+					command: "/curios set ring @p 5"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			description: ["不要作死，我只能跟你说这么多！"]
+			dependencies: ["0EAE3428F6ECB2DA"]
+			id: "110DA9E514F33926"
+			tasks: [{
+				id: "38E4E22E87FB2887"
+				type: "checkmark"
+				title: "成为胶兽之路"
+			}]
+		}
+		{
+			title: "黑糊糊的失败品"
+			x: 7.0d
+			y: -4.5d
+			dependencies: ["110DA9E514F33926"]
+			id: "2EC463BE9ABEF646"
+			tasks: [{
+				id: "2F0F3F7271927525"
+				type: "item"
+				item: "changed:dark_latex_goo"
+				count: 32L
+			}]
+		}
+		{
+			title: "基因突变的成功品"
+			x: 9.0d
+			y: -4.5d
+			dependencies: ["110DA9E514F33926"]
+			id: "0974558DDEFA8D8B"
+			tasks: [{
+				id: "116356D204D875ED"
+				type: "item"
+				item: "changed:white_latex_goo"
+				count: 32L
+			}]
+		}
+		{
+			title: "试剂"
+			x: 8.0d
+			y: -4.5d
+			dependencies: ["110DA9E514F33926"]
+			id: "09C008B65CB7A057"
+			tasks: [{
+				id: "69408C0A44D696D3"
+				type: "item"
+				item: "changed:latex_base"
+				count: 16L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -6.5d
+			dependencies: ["09C008B65CB7A057"]
+			id: "182C3AF0C629123D"
+			tasks: [{
+				id: "1ACA784970B7870F"
+				type: "item"
+				item: "changed:syringe"
+			}]
+		}
+		{
+			title: "...我才...才不是什么失败品...咕噜..."
+			x: 8.0d
+			y: -10.0d
+			dependencies: ["400AE06498096E70"]
+			id: "226DC3BA6A8A3970"
+			tasks: [{
+				id: "1D9C04F19AF2367C"
+				type: "item"
+				item: "changed:dark_latex_crystal_fragment"
+				count: 10L
+			}]
+		}
+		{
+			title: "成龙历险记"
+			x: 7.0d
+			y: -10.0d
+			dependencies: ["400AE06498096E70"]
+			id: "21492BBF436DF99B"
+			tasks: [{
+				id: "1AB7227F77404D4D"
+				type: "item"
+				item: "changed:dark_latex_dragon_crystal_fragment"
+				count: 10L
+			}]
+		}
+		{
+			title: "狠人"
+			x: 9.0d
+			y: -10.0d
+			dependencies: ["400AE06498096E70"]
+			id: "09E74320105B05DE"
+			tasks: [{
+				id: "0939F5E44BF42B18"
+				type: "item"
+				item: "changed:latex_wolf_crystal_fragment"
+				count: 10L
+			}]
+		}
+		{
+			title: "试着自己制作一下"
+			x: 11.0d
+			y: -6.5d
+			dependencies: [
+				"0B42BC9CCEA00FE1"
+				"182C3AF0C629123D"
+			]
+			id: "400AE06498096E70"
+			tasks: [
+				{
+					id: "4A416416620A65CC"
+					type: "item"
+					item: "changed:infuser"
+				}
+				{
+					id: "455FEAE42D234757"
+					type: "item"
+					item: "changed:purifier"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -15.0d
+			dependencies: ["09E74320105B05DE"]
+			id: "681C54D51FAAAF2A"
+			tasks: [{
+				id: "5AB3E6B371584F19"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_crystal_wolf_horned"
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: -15.0d
+			dependencies: ["09E74320105B05DE"]
+			id: "26E9A85E100582FF"
+			tasks: [{
+				id: "0BAD5A4582F58D92"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_crystal_wolf"
+					}
+				}
+			}]
+		}
+		{
+			title: "呦，你害羞了!"
+			x: 6.0d
+			y: -15.0d
+			dependencies: ["21492BBF436DF99B"]
+			id: "2E34B28C046039BF"
+			tasks: [{
+				id: "610051B6A530F8D3"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_dark_latex_dragon"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -15.0d
+			dependencies: ["226DC3BA6A8A3970"]
+			id: "70B32FE3AB408584"
+			tasks: [{
+				id: "7258435040D32D87"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_dark_latex_wolf/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -15.0d
+			dependencies: ["226DC3BA6A8A3970"]
+			id: "64E38D7A81C4D642"
+			tasks: [{
+				id: "37BC552DEBDBD7DD"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_dark_latex_yufeng"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: -15.0d
+			dependencies: ["226DC3BA6A8A3970"]
+			id: "2F3D03DF9A2265D3"
+			tasks: [{
+				id: "05C19C31E75B59FA"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_dark_latex_wolf/male"
+					}
+				}
+			}]
+		}
+		{
+			title: "半狼胶兽"
+			x: 7.0d
+			y: -17.0d
+			dependencies: [
+				"2F3D03DF9A2265D3"
+				"70B32FE3AB408584"
+				"64E38D7A81C4D642"
+			]
+			can_repeat: true
+			id: "61985108EF369DE2"
+			tasks: [{
+				id: "353FA222AAF7038B"
+				type: "item"
+				item: "changed:dark_latex_goo"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4330E9D0D8833C54"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_dark_latex_wolf_partial"
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "5374F2987D3A9F6C"
+			tasks: [{
+				id: "79BCA9A1993E6E75"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_light_latex_wolf/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "7C8AEEB401B62512"
+			tasks: [{
+				id: "1F2B3753288498AC"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_aerosol_latex_wolf"
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "7A5A7ADAD020481A"
+			tasks: [{
+				id: "51731179993F8056"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_alien"
+					}
+				}
+			}]
+		}
+		{
+			x: 15.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "6150066203AE342B"
+			tasks: [{
+				id: "3C1F5D6F969AA1EA"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_bee"
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "19A74A0AF72718CB"
+			tasks: [{
+				id: "16A85BA9F55D9391"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_beifeng"
+					}
+				}
+			}]
+		}
+		{
+			x: 17.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "338091D34A9C1991"
+			tasks: [{
+				id: "75422FCEE3C6A585"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_blue_dragon"
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "6F0D4C839D63700F"
+			tasks: [{
+				id: "4C45F67E5BB3822E"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_blue_wolf"
+					}
+				}
+			}]
+		}
+		{
+			x: 19.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "6B0B26D6BF6AAEDE"
+			tasks: [{
+				id: "0D7D544353000061"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_orca"
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "0AE92D34ECFB52E4"
+			tasks: [{
+				id: "4AFD75CC6CF332B3"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_green_lizard"
+					}
+				}
+			}]
+		}
+		{
+			x: 21.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "51CC3063273DFF24"
+			tasks: [{
+				id: "0E2D3DA331A83B93"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_crocodile"
+					}
+				}
+			}]
+		}
+		{
+			x: 22.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "1013470BCF08F3A4"
+			tasks: [{
+				id: "5B2C45D2712DF702"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_deer"
+					}
+				}
+			}]
+		}
+		{
+			x: 23.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "54A941159FA231DB"
+			tasks: [{
+				id: "3FC3B6F807F45C1D"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_fennec_fox"
+					}
+				}
+			}]
+		}
+		{
+			x: 24.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "21CE55BCC3887EF7"
+			tasks: [{
+				id: "60F0A80FFED4E91A"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_human"
+					}
+				}
+			}]
+		}
+		{
+			x: 25.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "52E2388BC1FCF5EF"
+			tasks: [{
+				id: "56B4AEA2905F0B21"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_hypno_cat"
+					}
+				}
+			}]
+		}
+		{
+			x: 26.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "0073F08DC4674816"
+			tasks: [{
+				id: "3DE0ED2500A9E9E0"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_keon_wolf"
+					}
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "51539240DE9115BD"
+			tasks: [{
+				id: "5DE1F25BE369B50E"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_leaf"
+					}
+				}
+			}]
+		}
+		{
+			x: 28.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "1B37234B60F46C5F"
+			tasks: [{
+				id: "7995906BAA3D7A63"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_medusa_cat"
+					}
+				}
+			}]
+		}
+		{
+			x: 29.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "0737234B0EFE0BDB"
+			tasks: [{
+				id: "2B76552FAB70B2B5"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_mimic_plant"
+					}
+				}
+			}]
+		}
+		{
+			title: "新手劝退猫"
+			x: 30.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "795C1F287198819B"
+			tasks: [{
+				id: "77E565C32DF38C6B"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_ming_cat"
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "06400B29B19FF37C"
+			tasks: [{
+				id: "20A98DC9393BCF20"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_moth"
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "12A9AC2F386BE736"
+			tasks: [{
+				id: "42B9846F29405CC5"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_otter"
+					}
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "6A1FCA269575700A"
+			tasks: [{
+				id: "2C423DE32571AFC5"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_pink_wyvern"
+					}
+				}
+			}]
+		}
+		{
+			x: 15.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "70CB5892B9E36247"
+			tasks: [{
+				id: "3F5FC64C34838D0F"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_purple_fox"
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "3CCC1C096BF77574"
+			tasks: [{
+				id: "0ADBDA3A39EF01A4"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_raccoon"
+					}
+				}
+			}]
+		}
+		{
+			x: 17.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "22934A1D88586484"
+			tasks: [{
+				id: "16AC2AE6C439CDC0"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_red_dragon"
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "0221B52AC69BC2B2"
+			tasks: [{
+				id: "47A064165F5D290E"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_red_panda"
+					}
+				}
+			}]
+		}
+		{
+			x: 19.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "7EA4798446BEE70D"
+			tasks: [{
+				id: "38142E77349A7079"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_shark"
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "2646B113E3F761A2"
+			tasks: [{
+				id: "607313F8BBE9CB44"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_snake"
+					}
+				}
+			}]
+		}
+		{
+			x: 21.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "2A3E343792333288"
+			tasks: [{
+				id: "65B3A948F002E1C6"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_sniper_dog"
+					}
+				}
+			}]
+		}
+		{
+			x: 22.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "7132F64A3305B473"
+			tasks: [{
+				id: "531BE54B5EF2BA0A"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_squirrel"
+					}
+				}
+			}]
+		}
+		{
+			x: 23.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "2231F327CDCC16B3"
+			tasks: [{
+				id: "40C6DD7E390B3C1B"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_stiger"
+					}
+				}
+			}]
+		}
+		{
+			title: "喵鲨"
+			x: 24.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "633ACFE76E111A92"
+			tasks: [{
+				id: "60B46262F0F20AF5"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_tiger_shark"
+					}
+				}
+			}]
+		}
+		{
+			x: 25.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "386CE5B30A75331E"
+			tasks: [{
+				id: "3B20DE2DE2E1714D"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_traffic_cone_dragon"
+					}
+				}
+			}]
+		}
+		{
+			x: 26.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "1114E281AD6F2B80"
+			tasks: [{
+				id: "746898F6652CDB93"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_translucent_lizard"
+					}
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "77A4A71BC80DAEF5"
+			tasks: [{
+				id: "0D18ACC622001C26"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_light_latex_wolf/male"
+					}
+				}
+			}]
+		}
+		{
+			title: "小普罗"
+			x: 9.0d
+			y: -17.0d
+			dependencies: [
+				"2F3D03DF9A2265D3"
+				"70B32FE3AB408584"
+				"64E38D7A81C4D642"
+			]
+			can_repeat: true
+			id: "4B03DAAF99F0191D"
+			tasks: [{
+				id: "2AD51A8FBCA881CB"
+				type: "item"
+				item: "changed:dark_latex_crystal_fragment"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "306D8DC322885D2C"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_dark_latex_pup"
+					}
+				}
+			}]
+		}
+		{
+			x: 28.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "0F1ED0779F95CB95"
+			tasks: [{
+				id: "7972A572AB24E1A3"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_manta_ray/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 29.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "6A9AD61A3512E6DC"
+			tasks: [{
+				id: "38B2DA013207729A"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_manta_ray/male"
+					}
+				}
+			}]
+		}
+		{
+			x: 30.0d
+			y: -13.5d
+			dependencies: ["400AE06498096E70"]
+			id: "346A81DB97023F63"
+			tasks: [{
+				id: "187145EFBB60BB5C"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_mermaid_shark/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "5FB45C9CA10FD3A3"
+			tasks: [{
+				id: "0B035FFE696E5EA3"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_mermaid_shark/male"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "5BEE69A416EEBD35"
+			tasks: [{
+				id: "06943DB6467EA5DF"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_shark/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "4346DA7600A17DE4"
+			tasks: [{
+				id: "46F9A8E8B632C761"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_snow_leopard/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "12EE2D8F7A239CA0"
+			tasks: [{
+				id: "18CE1013EB7AA072"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_snow_leopard/male"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "2DF3C4EBFFC0F482"
+			tasks: [{
+				id: "4A9B0A937E1F2E74"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_squid_dog/female"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "35AC671645AF9BAD"
+			tasks: [{
+				id: "372E5841DDD182AD"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_squid_dog/male"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "78A62936EBB0CFCE"
+			tasks: [{
+				id: "37AE8608822AA9CA"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_watermelon_cat"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "03C0D44AA4FD1136"
+			tasks: [{
+				id: "3E3695E8F1751CDD"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_white_tiger"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "21A94D483F0BECC7"
+			tasks: [{
+				id: "411E14881A0B3374"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_latex_yuin"
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "428D28A66BC5F5C1"
+			tasks: [{
+				id: "36B1C962D7FFA1C6"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_light_latex_knight"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "372F5D4D046A0BD7"
+			tasks: [{
+				id: "620101A522FF2184"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_light_latex_wolf_organic"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "696082B28066C019"
+			tasks: [{
+				id: "4CBE6542305256C5"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed:form_white_latex_wolf"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "450FACA1539F557E"
+			tasks: [{
+				id: "731381D4758197B4"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_biosynth_snow_leopard/female"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "7547446424DA49CE"
+			tasks: [{
+				id: "4F04A734E1DE02FB"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_biosynth_snow_leopard/male"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "18E68B2E7ED914AB"
+			tasks: [{
+				id: "683F8E206181EF12"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_buny"
+					}
+				}
+			}]
+		}
+		{
+			x: -10.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "2418D28ADF1A15D3"
+			tasks: [{
+				id: "79EFE0F8108D7489"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_dazed_latex"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "5D833B7FBA1AB54A"
+			tasks: [{
+				id: "782C798ADF24673A"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_ket_experiment009"
+					}
+				}
+			}]
+		}
+		{
+			x: -12.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "12FA8F46B3356776"
+			tasks: [{
+				id: "62C55622DDD444B4"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_latex_puro_kind/female"
+					}
+				}
+			}]
+		}
+		{
+			x: -13.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "5454CEAE375CFA50"
+			tasks: [{
+				id: "1871EB9930A5B4FB"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_latex_puro_kind/male"
+					}
+				}
+			}]
+		}
+		{
+			x: -14.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "4C61D5C63654724D"
+			tasks: [{
+				id: "3BEB18F70DE60BE8"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_latex_snow_fox/female"
+					}
+				}
+			}]
+		}
+		{
+			x: -15.0d
+			y: -15.0d
+			dependencies: ["400AE06498096E70"]
+			id: "7F07CB913290DA7B"
+			tasks: [{
+				id: "2348ABD284270104"
+				type: "item"
+				item: {
+					id: "changed:latex_syringe"
+					Count: 1b
+					tag: {
+						owner: [I;
+							1624827055
+							-2074588489
+							-1560485957
+							-2032684904
+						]
+						safe: 1b
+						form: "changed_addon:form_latex_snow_fox/male"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}
