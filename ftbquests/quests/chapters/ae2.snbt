@@ -1,0 +1,1207 @@
+{
+	id: "1B66A31D8798EEAC"
+	group: "0B9EFB5D6DB39A8B"
+	order_index: 2
+	filename: "ae2"
+	title: "科技线"
+	icon: "ae2:wireless_crafting_terminal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "科技启动！"
+			x: 0.0d
+			y: 0.0d
+			shape: "octagon"
+			description: ["胶兽的世界？那又怎么样？我们又不是做不了设备"]
+			dependency_requirement: "one_completed"
+			id: "5EDF1A3105C019AB"
+			tasks: [{
+				id: "408F5C93DD3AAE04"
+				type: "checkmark"
+				title: "AE2"
+			}]
+		}
+		{
+			title: "如果你把地球挖空了的话就尝试一下这个吧"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["5EDF1A3105C019AB"]
+			progression_mode: "flexible"
+			id: "4ACA71B68A0B20AD"
+			tasks: [{
+				id: "13C3283EA2CA4E91"
+				type: "item"
+				title: "Any #excompressum:sieves"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "excompressum:sieves"
+					}
+				}
+			}]
+		}
+		{
+			title: "你该不会不知道怎么制作粘土吧"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["4ACA71B68A0B20AD"]
+			optional: true
+			id: "2821A4E7BAEC7738"
+			tasks: [
+				{
+					id: "7919DE6EFF7FD55E"
+					type: "item"
+					title: "Any #exnihilosequentia:barrels"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "exnihilosequentia:barrels"
+						}
+					}
+				}
+				{
+					id: "0986AEE71A11BD00"
+					type: "item"
+					item: "exnihilosequentia:dust"
+					count: 32L
+				}
+				{
+					id: "080F4926CBB9E23A"
+					type: "item"
+					item: "minecraft:clay"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "26DC3270602D961A"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 32
+			}]
+		}
+		{
+			title: "制作岩浆"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "把热的东西放在坩埚底下"
+			dependencies: ["2821A4E7BAEC7738"]
+			id: "3CBD8412D1BAFA71"
+			tasks: [
+				{
+					id: "37A800A0FC1090D5"
+					type: "item"
+					item: "exnihilosequentia:porcelain_clay"
+					count: 7L
+				}
+				{
+					id: "7231BDA837B04B5A"
+					type: "item"
+					item: "exnihilosequentia:unfired_crucible"
+				}
+				{
+					id: "6E5DD2FCE7613589"
+					type: "item"
+					item: "exnihilosequentia:fired_crucible"
+				}
+			]
+			rewards: [{
+				id: "5F455BB5AF03302E"
+				type: "item"
+				item: "minecraft:coal_block"
+				count: 9
+			}]
+		}
+		{
+			title: "成了！"
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["3CBD8412D1BAFA71"]
+			id: "78C0A8A9780B7F56"
+			tasks: [{
+				id: "4886D5624F3AEF86"
+				type: "item"
+				item: "minecraft:lava_bucket"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "577FB83C4D5BAAC9"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			subtitle: "在我知道如何放照片之前你先查查？"
+			dependencies: ["78C0A8A9780B7F56"]
+			id: "23B13DADA3BB3581"
+			tasks: [{
+				id: "45496AE7A38C81EC"
+				type: "checkmark"
+				title: "该不会还没有人会做刷石机吧......"
+			}]
+		}
+		{
+			title: "碎石行动！"
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["23B13DADA3BB3581"]
+			id: "4A66B060750D3B8E"
+			tasks: [
+				{
+					id: "0D7428B3D9E30A85"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 64L
+				}
+				{
+					id: "42554DFCFF702EB5"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 64L
+				}
+			]
+		}
+		{
+			title: "用钩子破坏叶子"
+			x: 14.0d
+			y: 0.0d
+			description: ["然后放叶子上等等吧"]
+			dependencies: ["4A66B060750D3B8E"]
+			id: "14D570C649D64043"
+			tasks: [
+				{
+					id: "578A870525D85F3B"
+					type: "item"
+					title: "Any #exnihilosequentia:crook"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "exnihilosequentia:crook"
+						}
+					}
+				}
+				{
+					id: "64D7862876507680"
+					type: "item"
+					item: "exnihilosequentia:silkworm"
+					count: 10L
+				}
+			]
+		}
+		{
+			title: "网"
+			x: 16.0d
+			y: 0.0d
+			dependencies: ["14D570C649D64043"]
+			id: "3E4D6E5918ECE10A"
+			tasks: [{
+				id: "64F76DB472F3D0EE"
+				type: "item"
+				item: "exnihilosequentia:string_mesh"
+			}]
+		}
+		{
+			title: "效率不够！！！"
+			x: 18.0d
+			y: 0.0d
+			dependencies: ["3E4D6E5918ECE10A"]
+			id: "165E72AB086D7928"
+			tasks: [{
+				id: "600D7F469DADADAD"
+				type: "item"
+				title: "Any #excompressum:heavy_sieve"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "excompressum:heavy_sieve"
+					}
+				}
+			}]
+		}
+		{
+			title: "效率不够！！！"
+			x: 18.0d
+			y: -1.0d
+			dependencies: ["3E4D6E5918ECE10A"]
+			id: "3B9F4791FD5535B4"
+			tasks: [
+				{
+					id: "28BD1CC15EADCBBF"
+					type: "item"
+					item: "excompressum:auto_hammer"
+				}
+				{
+					id: "49ED2489555647DB"
+					type: "item"
+					item: "excompressum:auto_sieve"
+				}
+				{
+					id: "5D0967DA04227013"
+					type: "item"
+					item: "excompressum:auto_compressor"
+				}
+			]
+		}
+		{
+			title: "升级一次"
+			x: 18.0d
+			y: 1.0d
+			dependencies: ["3E4D6E5918ECE10A"]
+			id: "2A20EA17B45A45ED"
+			tasks: [{
+				id: "712AEF2B0A3E8660"
+				type: "item"
+				item: "exnihilosequentia:flint_mesh"
+			}]
+		}
+		{
+			title: "升级一次"
+			x: 20.0d
+			y: 2.0d
+			dependencies: ["2A20EA17B45A45ED"]
+			id: "69EA773AF0C719E2"
+			tasks: [{
+				id: "372FD5A0D3AFFDB3"
+				type: "item"
+				item: "exnihilosequentia:iron_mesh"
+			}]
+		}
+		{
+			title: "升级一次"
+			x: 22.0d
+			y: 3.0d
+			dependencies: ["69EA773AF0C719E2"]
+			id: "751E45B921042D86"
+			tasks: [{
+				id: "19529AD12B07C492"
+				type: "item"
+				item: "exnihilosequentia:diamond_mesh"
+			}]
+		}
+		{
+			title: "升级一次"
+			x: 24.0d
+			y: 4.0d
+			dependencies: ["751E45B921042D86"]
+			id: "27B28173EB81B0F6"
+			tasks: [{
+				id: "7B060630DA3A1F16"
+				type: "item"
+				item: "exnihilosequentia:emerald_mesh"
+			}]
+		}
+		{
+			title: "升完了！"
+			x: 26.0d
+			y: 5.0d
+			dependencies: ["27B28173EB81B0F6"]
+			id: "2337CA19B67B4763"
+			tasks: [{
+				id: "3082BAFCF7C2E21B"
+				type: "item"
+				item: "exnihilosequentia:netherite_mesh"
+			}]
+		}
+		{
+			title: "效率最大化"
+			x: 20.0d
+			y: -1.0d
+			dependencies: [
+				"3B9F4791FD5535B4"
+				"165E72AB086D7928"
+			]
+			id: "377EFADD03773D6B"
+			tasks: [
+				{
+					id: "6BF398F676815DC2"
+					type: "item"
+					item: "excompressum:auto_heavy_sieve"
+				}
+				{
+					id: "79C927B446F0CFF6"
+					type: "item"
+					item: "excompressum:auto_compressed_hammer"
+				}
+			]
+		}
+		{
+			title: "AE2"
+			x: 2.0d
+			y: -1.0d
+			description: ["比红石还要难"]
+			dependencies: ["5EDF1A3105C019AB"]
+			id: "19D1B6BEF965D825"
+			tasks: [{
+				id: "3DA68B3E85E379AF"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			title: "这是红石被发明之前的东西"
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["5EDF1A3105C019AB"]
+			id: "0AA756E8BEE57C1E"
+			tasks: [{
+				id: "65ADA5E23BCC0842"
+				type: "item"
+				title: "Any #forge:ingots"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/zinc"
+					}
+				}
+				count: 9L
+			}]
+			rewards: [{
+				id: "021575F3A6F6F56B"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			title: "I wish I want a big bag!!!"
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["5EDF1A3105C019AB"]
+			id: "7E5DA8B7C4AFCB06"
+			tasks: [{
+				id: "430AEB2B27E57D2A"
+				type: "item"
+				item: "refinedstorage:machine_casing"
+			}]
+		}
+		{
+			title: "安山岩最有用的一集"
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["0AA756E8BEE57C1E"]
+			id: "402F433CD9B6454C"
+			tasks: [{
+				id: "25EDE91A7743FF1F"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 9L
+			}]
+			rewards: [{
+				id: "5A1FAAF3C6EA4135"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			dependencies: ["402F433CD9B6454C"]
+			id: "44EA68DED949AA64"
+			tasks: [{
+				id: "17BA51E8C7F98F25"
+				type: "item"
+				item: "create:shaft"
+				count: 9L
+			}]
+			rewards: [{
+				id: "40846D93010B22FF"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			title: "小齿轮？大齿轮？"
+			x: 8.0d
+			y: 1.0d
+			dependencies: ["44EA68DED949AA64"]
+			id: "7CC8FF76C3DB2E43"
+			tasks: [
+				{
+					id: "1DA3F11E4FBB8DA3"
+					type: "item"
+					item: "create:cogwheel"
+					count: 2L
+				}
+				{
+					id: "5DFE3EFE6C70145D"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "5BB9A391688141DE"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			title: "用水转！"
+			x: 10.0d
+			y: 1.0d
+			dependencies: ["7CC8FF76C3DB2E43"]
+			id: "05DEF77ED544467C"
+			tasks: [{
+				id: "2D101ED85DAD83CA"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "74F00E81E501F292"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			title: "升级！"
+			x: 10.0d
+			y: 2.0d
+			dependencies: ["05DEF77ED544467C"]
+			id: "309AEDBBA1FA5848"
+			tasks: [{
+				id: "00A4E6CAF02D02A3"
+				type: "item"
+				item: "create:large_water_wheel"
+			}]
+			rewards: [{
+				id: "6257709664075942"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			title: "制壳"
+			x: 12.0d
+			y: 1.0d
+			dependencies: ["05DEF77ED544467C"]
+			id: "3EDE97FA2DF6369B"
+			tasks: [
+				{
+					id: "1D35F4434C3A2BFB"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+				{
+					id: "0308E055C1703E0D"
+					type: "item"
+					title: "Any #forge:stripped_logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:stripped_logs"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "52C26050FACBF219"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			title: "压板"
+			x: 14.0d
+			y: 1.0d
+			dependencies: ["3EDE97FA2DF6369B"]
+			id: "14DAC9EEBE9E8B9F"
+			tasks: [
+				{
+					id: "4BBE19C5A3A99A4F"
+					type: "item"
+					item: "create:depot"
+				}
+				{
+					id: "74A359071CD73203"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+			]
+			rewards: [{
+				id: "0F9AC8D8B7B73810"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3156844894260829972L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 1.0d
+			dependencies: ["14DAC9EEBE9E8B9F"]
+			id: "47CB59EE5F6C4C45"
+			tasks: [{
+				id: "7E05C5018B5B1600"
+				type: "item"
+				item: "create:copper_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			dependencies: ["14DAC9EEBE9E8B9F"]
+			id: "7F2744DAB122B489"
+			tasks: [{
+				id: "0A5B039E7A564234"
+				type: "item"
+				item: "create:iron_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 3.0d
+			dependencies: ["14DAC9EEBE9E8B9F"]
+			id: "7BA8DF51E67E7437"
+			tasks: [{
+				id: "392A1BDC69DB1F4B"
+				type: "item"
+				item: "create:golden_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			dependencies: [
+				"14DAC9EEBE9E8B9F"
+				"0358729257342BD9"
+			]
+			id: "35DEB9AD91BC1667"
+			tasks: [{
+				id: "177A2E4FE5A1E94F"
+				type: "item"
+				item: "create:brass_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 5.0d
+			dependencies: ["14DAC9EEBE9E8B9F"]
+			id: "5186C037D9D776AC"
+			tasks: [{
+				id: "3D18BA075B33835A"
+				type: "item"
+				item: "alloyed:bronze_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 6.0d
+			dependencies: ["14DAC9EEBE9E8B9F"]
+			id: "2C0D7011BBBA231A"
+			tasks: [{
+				id: "424B1EEE1C18F586"
+				type: "item"
+				item: "alloyed:steel_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 16.0d
+			y: 7.0d
+			dependencies: ["14DAC9EEBE9E8B9F"]
+			id: "4496473BA09B4469"
+			tasks: [{
+				id: "587AC9A46B01968E"
+				type: "item"
+				item: "createaddition:zinc_sheet"
+				count: 4L
+			}]
+		}
+		{
+			x: 22.0d
+			y: 1.0d
+			dependencies: ["47CB59EE5F6C4C45"]
+			id: "102CBBDCB997C29F"
+			tasks: [{
+				id: "235844F4ACA6334A"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+		}
+		{
+			title: "储存点东西？"
+			x: 22.0d
+			y: 0.0d
+			dependencies: ["47CB59EE5F6C4C45"]
+			id: "1E154505B442D1F9"
+			tasks: [{
+				id: "669C42674FC005F7"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			title: "热力"
+			x: 22.0d
+			y: -1.0d
+			dependencies: ["47CB59EE5F6C4C45"]
+			id: "789A0794E31D1D40"
+			tasks: [{
+				id: "4BB3FF11D6993947"
+				type: "item"
+				item: "create:steam_engine"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 2.0d
+			dependencies: ["102CBBDCB997C29F"]
+			id: "37FDCA53C0FA3C29"
+			tasks: [{
+				id: "179EBF266BF22A00"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+		}
+		{
+			title: "不用燃料也能烧！"
+			x: 18.0d
+			y: 2.0d
+			dependencies: ["7F2744DAB122B489"]
+			id: "130B0A094F550AF7"
+			tasks: [
+				{
+					id: "63D151A562314178"
+					type: "item"
+					item: "create:propeller"
+				}
+				{
+					id: "78C83C3BF6B3981C"
+					type: "item"
+					item: "create:encased_fan"
+				}
+			]
+		}
+		{
+			title: "三件套"
+			x: 18.0d
+			y: 3.0d
+			dependencies: ["7BA8DF51E67E7437"]
+			id: "3D4173CB42B5DB40"
+			tasks: [
+				{
+					id: "4C14293BF3683531"
+					type: "item"
+					title: "Any #create:toolboxes"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "create:toolboxes"
+						}
+					}
+				}
+				{
+					id: "64920E0159693455"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "65C8672BB1AC9CE8"
+					type: "item"
+					item: "create:goggles"
+				}
+			]
+		}
+		{
+			title: "让我访问！！！"
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["3EDE97FA2DF6369B"]
+			id: "6C1669EC6DEBB0EC"
+			tasks: [
+				{
+					id: "61C77536761BA5F9"
+					type: "item"
+					item: "create:speedometer"
+				}
+				{
+					id: "0F0E2AFB9A8EA632"
+					type: "item"
+					item: "create:stressometer"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["402F433CD9B6454C"]
+			id: "51C080D7FAEA26A9"
+			tasks: [{
+				id: "1D576E740057D333"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["7F2744DAB122B489"]
+			id: "2D71A9B756AE79F5"
+			tasks: [{
+				id: "654735FD2C1C539F"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			title: "你不当，有的生物会当！"
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["2D71A9B756AE79F5"]
+			id: "6C40D5614EB16B50"
+			tasks: [{
+				id: "4FDEAF36522D57D8"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			dependencies: ["7F2744DAB122B489"]
+			id: "129B8DFB9638A483"
+			tasks: [{
+				id: "237EE6E5502D1F20"
+				type: "item"
+				item: "create:whisk"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			dependencies: [
+				"51C080D7FAEA26A9"
+				"6C40D5614EB16B50"
+				"129B8DFB9638A483"
+			]
+			id: "2870CB8A2DE4779C"
+			tasks: [{
+				id: "3B093F58E3FB401A"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			title: "其他模组明明没有那么麻烦......"
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["2870CB8A2DE4779C"]
+			id: "0358729257342BD9"
+			tasks: [{
+				id: "20C0550A6FDB5FDF"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			title: "离自动化又近了一步"
+			x: 14.0d
+			y: 3.0d
+			dependencies: ["7F2744DAB122B489"]
+			id: "61A708307445DB9B"
+			tasks: [
+				{
+					id: "7F96F2FDFED7F864"
+					type: "item"
+					item: "create:rose_quartz"
+				}
+				{
+					id: "350D6B7BDA53C917"
+					type: "item"
+					item: {
+						id: "create:sand_paper"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "65AA7F72091E6744"
+					type: "item"
+					item: "create:polished_rose_quartz"
+				}
+				{
+					id: "1AFE846FF695204D"
+					type: "item"
+					item: "create:electron_tube"
+				}
+			]
+		}
+		{
+			title: "制壳2"
+			x: 8.0d
+			y: 5.0d
+			dependencies: ["0358729257342BD9"]
+			id: "21B6AB3E894C38D5"
+			tasks: [{
+				id: "63BC3FE8EA24A842"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			title: "自动工作台X大工作台√"
+			x: 10.0d
+			y: 5.0d
+			dependencies: [
+				"21B6AB3E894C38D5"
+				"61A708307445DB9B"
+			]
+			id: "29BD2344902F7F4C"
+			tasks: [{
+				id: "2DF4ADD0B7EE8DD9"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			title: "线和杆"
+			x: 24.0d
+			y: 2.0d
+			dependencies: ["7F2744DAB122B489"]
+			id: "5D701ED344434B4E"
+			tasks: [
+				{
+					id: "7D537BCDB180C4C5"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+				{
+					id: "27173734E964CEE1"
+					type: "item"
+					item: "createaddition:spool"
+				}
+			]
+		}
+		{
+			x: 26.0d
+			y: -1.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "10B30FB470DD663A"
+			tasks: [{
+				id: "54B370947CB71B91"
+				type: "item"
+				item: "createaddition:copper_rod"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 0.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "2CC383FA4B243508"
+			tasks: [{
+				id: "58D6AE47C3F8B7DF"
+				type: "item"
+				item: "createaddition:iron_rod"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 1.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "0E89B9751D1BF6D6"
+			tasks: [{
+				id: "349DB08796C1CF68"
+				type: "item"
+				item: "createaddition:gold_rod"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 2.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "6F5CA2884DCAB292"
+			tasks: [{
+				id: "46A6DED4EFEA0DB3"
+				type: "item"
+				item: "createaddition:electrum_rod"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -2.0d
+			dependencies: [
+				"5D701ED344434B4E"
+				"568F9412BC17C513"
+			]
+			id: "0415CAADE0DBE48C"
+			tasks: [{
+				id: "0EE8A93CD53DC37D"
+				type: "item"
+				item: "createaddition:electrum_wire"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -3.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "568F9412BC17C513"
+			tasks: [{
+				id: "59391CDBA456BAEF"
+				type: "item"
+				item: "createaddition:gold_wire"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -4.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "64E0B16495EBE815"
+			tasks: [{
+				id: "431BBCA448B19B13"
+				type: "item"
+				item: "createaddition:iron_wire"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -5.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "58817BD2E4F5F692"
+			tasks: [{
+				id: "5F8DA25FC6F18E84"
+				type: "item"
+				item: "createaddition:copper_wire"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 4.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "31F104A692541E5A"
+			tasks: [{
+				id: "60842BF4EA2B2165"
+				type: "item"
+				item: "createaddition:straw"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 3.0d
+			dependencies: ["5D701ED344434B4E"]
+			id: "6BEED2238984AE8F"
+			tasks: [{
+				id: "41AD4714DFD5756D"
+				type: "item"
+				item: "createaddition:brass_rod"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -4.0d
+			dependencies: ["64E0B16495EBE815"]
+			id: "27592408AC9996CA"
+			tasks: [{
+				id: "7A8FC3D50FC72BE2"
+				type: "item"
+				item: "createaddition:barbed_wire"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -5.0d
+			dependencies: ["58817BD2E4F5F692"]
+			id: "6822215401878E3A"
+			tasks: [{
+				id: "27FA6A85449A3DDF"
+				type: "item"
+				item: "createaddition:copper_spool"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -3.0d
+			dependencies: ["568F9412BC17C513"]
+			id: "1BB3CBE334028304"
+			tasks: [{
+				id: "7E5B5831E8F4FC4F"
+				type: "item"
+				item: "createaddition:gold_spool"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -2.0d
+			dependencies: ["0415CAADE0DBE48C"]
+			id: "4211D2F3B38B895A"
+			tasks: [{
+				id: "4456B106CCB120BC"
+				type: "item"
+				item: "createaddition:electrum_spool"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -5.0d
+			dependencies: ["6822215401878E3A"]
+			id: "472C250952028F41"
+			tasks: [{
+				id: "417D5588D686FE90"
+				type: "item"
+				item: "createaddition:portable_energy_interface"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -6.0d
+			dependencies: ["6822215401878E3A"]
+			id: "4B98171E73C4066C"
+			tasks: [{
+				id: "2740EF98AB7EA166"
+				type: "item"
+				item: "createaddition:festive_spool"
+			}]
+		}
+		{
+			title: "转化，充电！"
+			x: 30.0d
+			y: -4.0d
+			dependencies: [
+				"29BD2344902F7F4C"
+				"6822215401878E3A"
+				"2CC383FA4B243508"
+			]
+			id: "53FD16A028D1E19C"
+			tasks: [
+				{
+					id: "2FC648DA69DD9952"
+					type: "item"
+					item: "createaddition:electric_motor"
+				}
+				{
+					id: "7729641EA8D5C3FD"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "2A50F8788004C65D"
+					type: "item"
+					item: "createaddition:tesla_coil"
+				}
+			]
+		}
+		{
+			x: 28.0d
+			y: 2.0d
+			dependencies: [
+				"0E89B9751D1BF6D6"
+				"6F5CA2884DCAB292"
+			]
+			id: "58066DD781AA5971"
+			tasks: [{
+				id: "7713BD55F2E43B5E"
+				type: "item"
+				item: "createaddition:large_connector"
+			}]
+		}
+		{
+			x: 24.5d
+			y: -3.0d
+			dependencies: [
+				"568F9412BC17C513"
+				"0415CAADE0DBE48C"
+			]
+			dependency_requirement: "one_started"
+			id: "66FEF1612E7B0873"
+			tasks: [{
+				id: "48A8B3AFBB03E04C"
+				type: "checkmark"
+				title: "金线"
+			}]
+		}
+		{
+			x: 24.5d
+			y: -2.0d
+			dependencies: [
+				"66FEF1612E7B0873"
+				"10B30FB470DD663A"
+			]
+			id: "1D55DE64D060029F"
+			tasks: [{
+				id: "3201F7D71C29938E"
+				type: "item"
+				item: "createaddition:modular_accumulator"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -1.0d
+			dependencies: ["10B30FB470DD663A"]
+			id: "5CAA8FD6CC926474"
+			tasks: [{
+				id: "476B52BB8CAD5781"
+				type: "item"
+				item: "createaddition:connector"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -1.0d
+			dependencies: ["5CAA8FD6CC926474"]
+			id: "6C4FED68507C430B"
+			tasks: [{
+				id: "2CD4D788C0022334"
+				type: "item"
+				item: "createaddition:redstone_relay"
+			}]
+		}
+		{
+			icon: "thermal:tinker_bench"
+			x: 2.0d
+			y: 2.0d
+			description: ["加急施工中！"]
+			dependencies: ["5EDF1A3105C019AB"]
+			id: "189A7625966DCB30"
+			tasks: [{
+				id: "18A467CECB80EF68"
+				type: "checkmark"
+				title: "热力大家族"
+			}]
+		}
+		{
+			icon: {
+				id: "solarpanels:creative_energy_tablet"
+				Count: 1b
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "2000000000"
+						}]
+					}
+				}
+			}
+			x: -2.0d
+			y: 0.0d
+			description: ["加急施工中！"]
+			dependencies: ["5EDF1A3105C019AB"]
+			id: "3761E7105B9F9594"
+			tasks: [{
+				id: "6D9188E40DCBBC40"
+				type: "checkmark"
+				title: "通用的能量"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

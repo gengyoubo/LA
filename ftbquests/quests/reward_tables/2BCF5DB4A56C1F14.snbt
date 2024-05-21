@@ -1,0 +1,13 @@
+{
+	id: "2BCF5DB4A56C1F14"
+	order_index: 0
+	title: "矿石"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:coal", count: 32, weight: 5 }
+		{ item: "minecraft:diamond", weight: 3 }
+		{ item: "minecraft:emerald" }
+		{ item: "minecraft:gold_ingot", count: 16, weight: 4 }
+		{ item: "minecraft:iron_ingot", count: 16, weight: 4 }
+	]
+}

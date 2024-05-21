@@ -1,0 +1,175 @@
+{
+	id: "199E613A31603686"
+	group: "0B9EFB5D6DB39A8B"
+	order_index: 1
+	filename: "199E613A31603686"
+	title: "音乐"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "minecraft:barrier"
+			x: 0.0d
+			y: 0.0d
+			can_repeat: true
+			id: "64C4BC7F983D2401"
+			tasks: [{
+				id: "156F16DE76B1D3A7"
+				type: "checkmark"
+				title: "停止播放音乐"
+			}]
+			rewards: [{
+				id: "2C955DB545318B6B"
+				type: "command"
+				auto: "enabled"
+				command: "/stopsound @a music"
+			}]
+		}
+		{
+			title: "黑胶音乐1"
+			icon: "changed:black_goo_zone_record"
+			x: 1.0d
+			y: 0.0d
+			can_repeat: true
+			id: "4641C997C8058F18"
+			tasks: [{
+				id: "46B4129E4483B9FD"
+				type: "checkmark"
+				title: "白胶音乐"
+			}]
+			rewards: [{
+				id: "31DCD4BD317ACCF8"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.black_goo_zone music @p 0 0 0 10000 1 1"
+			}]
+		}
+		{
+			icon: "changed:crystal_zone_record"
+			x: 2.0d
+			y: 0.0d
+			can_repeat: true
+			id: "10D48F08EDA41E0D"
+			tasks: [{
+				id: "37D31989FBC15CA9"
+				type: "checkmark"
+				title: "黑胶音乐2"
+			}]
+			rewards: [{
+				id: "75627FBF0844E515"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.crystal_zone music @p 0 0 0 10000 1 1"
+			}]
+		}
+		{
+			icon: "changed:gas_room_record"
+			x: 3.0d
+			y: 0.0d
+			can_repeat: true
+			id: "2DD981B99E6282BD"
+			tasks: [{
+				id: "74A41E80182BC9BA"
+				type: "checkmark"
+				title: "毒气室"
+			}]
+			rewards: [{
+				id: "6C55CC0BA7B75334"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.gas_room music @p 0 0 0 10000 1 1"
+			}]
+		}
+		{
+			icon: "changed:outside_the_tower_record"
+			x: 4.0d
+			y: 0.0d
+			can_repeat: true
+			id: "4F32A3A0B0C437CD"
+			tasks: [{
+				id: "0F71EC674CAF2C59"
+				type: "checkmark"
+				title: "向外面的世界出发"
+			}]
+			rewards: [{
+				id: "05709C19635F1F19"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.outside_the_tower music @p 0 0 0 10000 1 1"
+			}]
+		}
+		{
+			icon: "changed:puro_the_black_goo_record"
+			x: 5.0d
+			y: 0.0d
+			can_repeat: true
+			id: "4A32736FF05A427C"
+			tasks: [{
+				id: "5A1E10D8D882EC37"
+				type: "checkmark"
+				title: "...咕噜..."
+			}]
+			rewards: [{
+				id: "4100371B05AAA21D"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.puro_the_black_goo music @p 0 0 0 10000 1 1"
+			}]
+		}
+		{
+			icon: "changed:puros_home_record"
+			x: 6.0d
+			y: 0.0d
+			can_repeat: true
+			id: "416E96B663644C12"
+			tasks: [{
+				id: "44BE78338897C68B"
+				type: "checkmark"
+				title: "普罗的“狼”窝"
+			}]
+			rewards: [{
+				id: "29C17BF315DB64A9"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.puros_home music @p 0 0 0 10000 1 1"
+			}]
+		}
+		{
+			icon: "changed:the_library_record"
+			x: 7.0d
+			y: 0.0d
+			can_repeat: true
+			id: "438507BBBB403F17"
+			tasks: [{
+				id: "7FFA9AD0436A2617"
+				type: "checkmark"
+				title: "图书馆"
+			}]
+			rewards: [{
+				id: "706605F3F3D4D656"
+				type: "command"
+				auto: "enabled"
+				command: "/playsound changed:music.the_library music @p ~ ~ ~ 10000 1 1"
+			}]
+		}
+		{
+			title: "极限一换一"
+			x: -1.0d
+			y: 0.0d
+			can_repeat: true
+			id: "78F7B334A50C3DCD"
+			tasks: [{
+				id: "0D354E111856EDF6"
+				type: "item"
+				item: "minecraft:dirt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7D9883F0CA90A523"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
