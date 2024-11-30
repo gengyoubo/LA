@@ -1,0 +1,22 @@
+{
+  "version": 0,
+  "forms": [
+    {
+      "location": "08013290-616X-ytgb-yuta-gengyouboXXX",
+      "particles": [ "gray", "gray", "gray", "gray", "white" ],
+      "shadowsize": 0.5,
+      "width": 0.7,
+      "height": 1.95,
+      "animation": { "swimtail": true },
+      "primaryColor": "gray",
+      "secondaryColor": "white",
+      "version": 1,
+      
+      "variant": {
+        "groundSpeed": 1,
+        "swimSpeed": 1.5,
+        "breatheMode": "ANY"
+      }
+    }
+  ]
+}
