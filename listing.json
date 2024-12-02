@@ -1,0 +1,572 @@
+{
+  "players": [
+    {
+      "uuid": "380df991-f603-344c-a090-369bad2a924a",
+      "tier": 0
+    },
+    {
+      "uuid": "53604e25-a0f4-4a1b-b269-e9cd01ec128f",
+      "tier": 0
+    },
+    {
+      "uuid": "d50acd96-7b12-40d1-ad5b-500b103f1ebc",
+      "tier": 0
+    },
+    {
+      "uuid": "faf0ec02-52de-4f3f-ad83-4db4414eb26c",
+      "tier": 0
+    },
+    {
+      "uuid": "b76b1e70-3da5-4f2f-9738-5327923d5e94",
+      "tier": 0
+    },
+    {
+      "uuid": "0164180b-8786-47f8-823b-e16182784757",
+      "tier": 0
+    },
+    {
+      "uuid": "9de49d7b-c086-4b4a-babc-12f2cfa3d886",
+      "tier": 0
+    },
+    {
+      "uuid": "1f5a10d9-4aa7-4c84-93b7-dc22bcb9228b",
+      "tier": 0
+    },
+    {
+      "uuid": "bfca8951-8fb0-4b14-bd54-1fc8b0c92d9d",
+      "tier": 0
+    },
+    {
+      "uuid": "044b3d66-364c-45bc-b47f-265856145eff",
+      "tier": 0
+    },
+    {
+      "uuid": "a7d9e592-4d0a-40e1-ba22-3cf827264c65",
+      "tier": 0
+    },
+    {
+      "uuid": "92d8d910-9164-46ad-bf35-5b8ca45327b7",
+      "tier": 0
+    },
+    {
+      "uuid": "ce1b80f0-85f6-479a-a96b-76abc0e02cde",
+      "tier": 3
+    },
+    {
+      "uuid": "ca03e217-a7c0-4a05-851e-e14c92d6d400",
+      "tier": 0
+    },
+    {
+      "uuid": "a5f61451-cf54-4c4b-807f-4e15db2d55b4",
+      "tier": 0
+    },
+    {
+      "uuid": "d74a0eaa-ba84-4d4e-a065-2ebf54abdffb",
+      "tier": 0
+    },
+    {
+      "uuid": "e34d8e38-9e51-4ffa-8707-15c593d025c3",
+      "tier": 0
+    },
+    {
+      "uuid": "141024f4-43bf-4a63-a8c4-cfe1f4ba2bc2",
+      "tier": 0
+    },
+    {
+      "uuid": "e671e376-ff47-4439-bea1-31500013c144",
+      "tier": 0
+    },
+    {
+      "uuid": "4b5fa03a-1e85-11ec-998b-d45d64bce613",
+      "tier": 0
+    },
+    {
+      "uuid": "435b3327-16f9-4e0c-a8af-1d7eb59c17ec",
+      "tier": 0
+    },
+    {
+      "uuid": "ed7d1c12-9d0e-4251-94dd-887856ee8b26",
+      "tier": 0
+    },
+    {
+      "uuid": "f7431d3b-4e60-4728-939d-3214a3ec93cf",
+      "tier": 0
+    },
+    {
+      "uuid": "647e4036-27b4-449c-af0b-3df20c0cbd1c",
+      "tier": 0
+    },
+    {
+      "uuid": "129efb68-e7fe-4578-a304-7db6e4e5af59",
+      "tier": 0
+    },
+    {
+      "uuid": "dfb2ff61-a450-45ae-8e92-b3f15a1bad99",
+      "tier": 0
+    },
+    {
+      "uuid": "4cd1558b-c9d5-4a95-a9b9-61e3a33a6f45",
+      "tier": 0
+    },
+    {
+      "uuid": "17bf439b-b088-4166-9cfa-dbf918136080",
+      "tier": 0
+    },
+    {
+      "uuid": "55beec5c-6ae8-4e4f-b3ce-4ff8ecfa9a1b",
+      "tier": 0
+    },
+    {
+      "uuid": "12d68894-69ea-4e77-86f1-d0d8eede9042",
+      "tier": 0
+    },
+    {
+      "uuid": "2ed22833-47e6-4f98-8a5e-ecaf504a8146",
+      "tier": 0
+    },
+    {
+      "uuid": "67620514-7dcc-448f-9c0e-066bfee25e6a",
+      "tier": 0
+    },
+    {
+      "uuid": "38c0de7d-6b7d-45a7-b148-93a8acc367a4",
+      "tier": 0
+    },
+    {
+      "uuid": "2e85d965-90b4-44db-b8cc-2ee762706977",
+      "tier": 0
+    },
+    {
+      "uuid": "dc7d4f3a-fc8a-4552-8fa9-9c341f685f3d",
+      "tier": 0
+    },
+    {
+      "uuid": "9331d785-24d7-4643-9e0e-63831857d54f",
+      "tier": 0
+    },
+    {
+      "uuid": "893f482f-7697-4a7f-96fb-e6438d61c3fc",
+      "tier": 0
+    },
+    {
+      "uuid": "ee937c12-820b-406f-86cc-128b7210689d",
+      "tier": 0
+    },
+    {
+      "uuid": "d1bd63fe-13ed-457f-a39a-1efac9179f06",
+      "tier": 0
+    },
+    {
+      "uuid": "a5e95b2f-08b8-4bdb-bcd7-7ce325804352",
+      "tier": 2
+    },
+    {
+      "uuid": "6fe451e0-1888-49f4-af6d-2d527ecf09a9",
+      "tier": 0
+    },
+    {
+      "uuid": "827856b7-2445-403a-a5f8-f22c1db4d749",
+      "tier": 0
+    },
+    {
+      "uuid": "a3a5e0c6-a10d-44f7-9906-a6da40c74d99",
+      "tier": 0
+    },
+    {
+      "uuid": "6da735eb-72e2-44d2-b9f1-8f8a5531bd4e",
+      "tier": 0
+    },
+    {
+      "uuid": "8132b775-d636-4671-82d2-a2d014beb5e2",
+      "tier": 0
+    },
+    {
+      "uuid": "bed51121-e82f-480c-bcad-7a6bbfded6a7",
+      "tier": 0
+    },
+    {
+      "uuid": "5b94b5db-122a-4d15-813f-f65e5b9ebdd8",
+      "tier": 0
+    },
+    {
+      "uuid": "395afaa3-6aef-4f9b-bf35-748f3f0a335b",
+      "tier": 0
+    },
+    {
+      "uuid": "4570e96c-bac4-4111-a233-181aa383ca52",
+      "tier": 0
+    },
+    {
+      "uuid": "8df9c84b-1d59-4d57-bfc8-e09012ca9373",
+      "tier": 0
+    },
+    {
+      "uuid": "d16b21dd-43dc-4c46-abbe-90f6587ac2dc",
+      "tier": 0
+    },
+    {
+      "uuid": "ddd3bb3f-e3f0-413f-905f-d9cfa21eb2b5",
+      "tier": 0
+    },
+    {
+      "uuid": "97a7de4e-12c9-47b4-b134-17d63e2d7dbf",
+      "tier": 0
+    },
+    {
+      "uuid": "5a4ac11c-9580-4dc4-b404-00aff80111d2",
+      "tier": 0
+    },
+    {
+      "uuid": "ce542cde-044c-4665-8f49-17245e1a3209",
+      "tier": 0
+    },
+    {
+      "uuid": "94b2716c-36f8-48a9-abb8-58ac226f83e2",
+      "tier": 0
+    },
+    {
+      "uuid": "fa511339-4706-4ac3-97e7-9ad4f65cdd15",
+      "tier": 0
+    },
+    {
+      "uuid": "c286c855-c3b7-476c-83a6-8fdf11a4fdcb",
+      "tier": 0
+    },
+    {
+      "uuid": "8adebc9d-4aad-4a79-9d2e-dd36ae42038f",
+      "tier": 0
+    },
+    {
+      "uuid": "d2027a4b-c4f3-4b62-82d3-2ec26643c2f5",
+      "tier": 0
+    },
+    {
+      "uuid": "e8a41876-910f-46c0-94b8-ee14f6594d36",
+      "tier": 0
+    },
+    {
+      "uuid": "a1159e9e-e8b5-41f0-b769-95cff0591b7b",
+      "tier": 0
+    },
+    {
+      "uuid": "050ba196-767b-4f47-986d-cfe5465e9c34",
+      "tier": 0
+    },
+    {
+      "uuid": "146a1e89-18ba-4437-ab36-568456f41a8d",
+      "tier": 0
+    },
+    {
+      "uuid": "c0b9396f-9c9c-4206-91a5-ce881ce8edc2",
+      "tier": 0
+    },
+    {
+      "uuid": "1d8d6ae6-83b5-4a9e-979e-c9509ae36c93",
+      "tier": 0
+    },
+    {
+      "uuid": "d304579e-9c8a-4f3c-a4b7-a2afa5895ff3",
+      "tier": 0
+    },
+    {
+      "uuid": "8af5270e-f2a3-4ed1-a94b-e151dd8953d9",
+      "tier": 0
+    },
+    {
+      "uuid": "4bb64658-83cd-4884-a924-f944b6ec6f31",
+      "tier": 0
+    },
+    {
+      "uuid": "164a5cbc-f8c9-45c4-b3ac-91816d9b81c7",
+      "tier": 0
+    },
+    {
+      "uuid": "2ac0bdb2-69ab-432b-82cb-e2b1bff1f771",
+      "tier": 0
+    },
+    {
+      "uuid": "905f8145-f9c8-488f-bbb3-c3aaec15272f",
+      "tier": 0
+    },
+    {
+      "uuid": "93358512-69bf-4db8-b0ae-3cfd0e87deba",
+      "tier": 0
+    },
+    {
+      "uuid": "cdd94308-35a2-49c1-9e9a-aae00012e9bb",
+      "tier": 0
+    },
+    {
+      "uuid": "c3992687-5135-4a3b-8e9d-18ef313e0777",
+      "tier": 0
+    },
+    {
+      "uuid": "b6ba605d-255a-4467-a112-8f0f98d54c1b",
+      "tier": 4
+    },
+    {
+      "uuid": "e47b0a1b-bcac-4fe6-af54-3922ab4fa4fb",
+      "tier": 0
+    },
+    {
+      "uuid": "f5d96a44-615d-4a8d-aa6f-05270d263a07",
+      "tier": 4
+    },
+    {
+      "uuid": "e3882c4b-78e8-4645-acd5-11ed7158a7b2",
+      "tier": 0
+    },
+    {
+      "uuid": "832a368d-ab79-467e-9f46-419ec8172bb8",
+      "tier": 0
+    },
+    {
+      "uuid": "3c5abcca-31f3-4ecb-ba53-44ddb38ba4d9",
+      "tier": 0
+    },
+    {
+      "uuid": "5c16597b-c302-48c6-9662-8c6b57dab4e8",
+      "tier": 0
+    },
+    {
+      "uuid": "2b143a5c-c8d7-48fb-aabb-bd1f718b2815",
+      "tier": 0
+    },
+    {
+      "uuid": "cde68165-4f69-4d92-b2e4-d7e9d9b226fa",
+      "tier": 0
+    },
+    {
+      "uuid": "63a6e044-913d-4aea-8454-b52fde6d9ed2",
+      "tier": 0
+    },
+    {
+      "uuid": "c28c857a-ad16-4ad2-b34a-60fbdff04f93",
+      "tier": 0
+    },
+    {
+      "uuid": "d8d7245a-a548-4a99-b9ed-f221e3213bb6",
+      "tier": 0
+    },
+    {
+      "uuid": "25c8f2d1-cba5-448a-b4ff-2bb84ee4d077",
+      "tier": 0
+    },
+    {
+      "uuid": "4d3451c0-9fc1-4e25-867c-e4349b3f0e49",
+      "tier": 0
+    },
+    {
+      "uuid": "1da31da9-1eb4-4a76-8f7f-feef46709403",
+      "tier": 0
+    },
+    {
+      "uuid": "8f448455-d04c-467c-89e0-2e9369ad6df5",
+      "tier": 0
+    },
+    {
+      "uuid": "cb020b5f-8ef5-405e-92f2-6a27fe2c2ab2",
+      "tier": 0
+    },
+    {
+      "uuid": "8e4cccd2-e049-4c10-bc21-9890706fe443",
+      "tier": 0
+    },
+    {
+      "uuid": "49b9f09c-3778-40e7-b4ec-caff71e37359",
+      "tier": 0
+    },
+    {
+      "uuid": "8f8f595a-ee48-4b11-b78a-19c66de865ea",
+      "tier": 0
+    },
+    {
+      "uuid": "831ffa53-6f84-4d59-b77a-44a5242f9ab2",
+      "tier": 0
+    },
+    {
+      "uuid": "0a2605cc-316a-4065-9974-90669ccc0e6f",
+      "tier": 0
+    },
+    {
+      "uuid": "a83fa86c-b656-44bf-9271-1352b55a0db5",
+      "tier": 0
+    },
+    {
+      "uuid": "ab9f0f66-0dc1-431d-b55c-df243b010f18",
+      "tier": 0
+    },
+    {
+      "uuid": "d179dc26-6e5d-48f4-b51e-2fc1ce68bfd0",
+      "tier": 0
+    },
+    {
+      "uuid": "1cc4925c-baae-4ce9-90d3-04669e546932",
+      "tier": 0
+    },
+    {
+      "uuid": "bd11ffcb-4520-4b84-84e5-ff3cbc0a4b4a",
+      "tier": 0
+    },
+    {
+      "uuid": "6552cbce-8961-4965-9aeb-b0c050c648fb",
+      "tier": 0
+    },
+    {
+      "uuid": "c775be91-e6e2-4b00-8d06-63b2eda104bb",
+      "tier": 0
+    },
+    {
+      "uuid": "98e53d8d-e4e1-4891-955c-37288dde1830",
+      "tier": 0
+    },
+    {
+      "uuid": "c36a3433-187f-427d-890e-522c20842095",
+      "tier": 0
+    },
+    {
+      "uuid": "6b6af00f-fd36-4fa3-b3a2-198f043183f1",
+      "tier": 0
+    },
+    {
+      "uuid": "0047c6d2-a140-4f82-b76d-8ececb979332",
+      "tier": 0
+    },
+    {
+      "uuid": "8982ab6e-9089-4789-b0a1-cc25c20230d0",
+      "tier": 0
+    },
+    {
+      "uuid": "59bdeb0a-5f5a-43f3-948e-e965814a47a7",
+      "tier": 0
+    },
+    {
+      "uuid": "6fc604ee-03d3-4a2a-8276-59a547d79d65",
+      "tier": 0
+    },
+    {
+      "uuid": "61052aa1-b9b9-4d1c-95fc-932e25128943",
+      "tier": 0
+    },
+    {
+      "uuid": "20d1db44-a1e7-4ed7-9450-f051627ab19f",
+      "tier": 0
+    },
+    {
+      "uuid": "196f3161-271f-480f-8664-29feb14e4fc1",
+      "tier": 0
+    },
+    {
+      "uuid": "74b2f90f-f0b8-4e17-9726-98c9852778c0",
+      "tier": 0
+    },
+    {
+      "uuid": "9aa92e84-ae3f-4f1d-a0b5-2eeb1a58ff92",
+      "tier": 0
+    },
+    {
+      "uuid": "f861f1dc-3af6-4dc0-bc85-12a3c0f9396c",
+      "tier": 0
+    },
+    {
+      "uuid": "f02d6fbc-8ff4-43e3-b69f-804213374e24",
+      "tier": 0
+    },
+    {
+      "uuid": "c0173d2c-40a3-4f66-86db-1226107e5169",
+      "tier": 0
+    },
+    {
+      "uuid": "33eece6a-0897-452c-a644-4f7b58188407",
+      "tier": 0
+    },
+    {
+      "uuid": "a249aacf-5bd9-4d95-938e-c92b7545ef2c",
+      "tier": 0
+    },
+    {
+      "uuid": "70becc37-360c-49fa-92ed-ef4cc5cc7cfc",
+      "tier": 0
+    },
+    {
+      "uuid": "a2c8dd73-3820-471b-8f5e-8bcb2b9a211c",
+      "tier": 0
+    },
+    {
+      "uuid": "28154d3e-0217-4534-8f2c-b3b67b334c4a",
+      "tier": 0
+    },
+    {
+      "uuid": "0bbb1c56-eafa-4d5e-a256-62abab093465",
+      "tier": 0
+    },
+    {
+      "uuid": "25c19cbd-00f7-48ae-8760-0273cf3a1e36",
+      "tier": 0
+    },
+    {
+      "uuid": "dbd57cb7-4f07-4234-9f83-2e3f915ae97b",
+      "tier": 0
+    },
+    {
+      "uuid": "a9250ca5-3eab-4c7d-81eb-a15ae46fe9fc",
+      "tier": 0
+    },
+    {
+      "uuid": "0945bc2b-5a09-4bda-b9e5-6ec5b3f39b60",
+      "tier": 0
+    },
+    {
+      "uuid": "226c5ecb-8a5d-45de-ae64-541258eee3a2",
+      "tier": 0
+    },
+    {
+      "uuid": "6141315f-0522-4460-86d8-9b36d7075626",
+      "tier": 0
+    },
+    {
+      "uuid": "8b01a0d8-b059-4c39-bf86-7d9d77a9ee78",
+      "tier": 0
+    },
+    {
+      "uuid": "391a5e9e-6172-4405-8063-599853558fd5",
+      "tier": 0
+    },
+    {
+      "uuid": "80626553-0983-4cc2-b286-66cbefdd1907",
+      "tier": 3
+    },
+    {
+      "uuid": "47e874c9-bec2-40b2-9ad2-c94ccf02b5c1",
+      "tier": 0
+    },
+    {
+      "uuid": "a5aa67b5-14cc-4359-b36c-9125c42b24de",
+      "tier": 0
+    },
+    {
+      "uuid": "1d2a6fe9-b100-46b4-8715-b6aa51948797",
+      "tier": 2
+    },
+    {
+      "uuid": "42c42c8d-7a85-4a3a-af59-b6f826c204be",
+      "tier": 0
+    },
+    {
+      "uuid": "1aa49624-7701-46a1-add4-a227d86ad909",
+      "tier": 0
+    },
+    {
+      "uuid": "2e3d95d5-e2b9-45b6-847e-52b200bcc183",
+      "tier": 0
+    },
+    {
+      "uuid": "d49f829c-69c5-43af-8cf3-8d7cf0a0bdc6",
+      "tier": 0
+    },
+    {
+      "uuid": "5b28d5e4-6af2-491e-8561-1615a576f96c",
+      "tier": 0
+    }
+  ]
+}
