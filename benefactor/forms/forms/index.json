@@ -1,0 +1,38 @@
+{
+  "version": 0,
+  "forms": [
+    {
+      "location": "8922cbbc-0c40-4262-b0b8-a153ec94ecdc",
+      "particles": [ "gray", "gray", "gray", "gray", "white" ],
+      "shadowsize": 0.5,
+      "width": 0.7,
+      "height": 1.95,
+      "animation": { "swimtail": true },
+      "primaryColor": "gray",
+      "secondaryColor": "white",
+      "version": 1,
+      
+      "variant": {
+        "groundSpeed": 0.875,
+        "swimSpeed": 1.4,
+        "breatheMode": "ANY"
+      }
+    },{
+      "location": "08cf0a8b-8367-4326-8101-e3c0f58a782a",
+      "particles": [ "gray", "gray", "gray", "gray", "white" ],
+      "shadowsize": 0.5,
+      "width": 0.7,
+      "height": 1.95,
+      "animation": { "swimtail": true },
+      "primaryColor": "gray",
+      "secondaryColor": "white",
+      "version": 1,
+      
+      "variant": {
+        "groundSpeed": 0.875,
+        "swimSpeed": 1.4,
+        "breatheMode": "ANY"
+      }
+    }
+  ]
+}
