@@ -4,6 +4,5 @@
 This is a column for people who have contributed to the mod pack, and those who have contributed to this pack will special latex in the game. (But I can't do anything about it if you contributed but don't have a licensed account .......)<br>
 Underneath it will be written in the format [name, UUID]. The name will mostly be the name of the game, and if someone without a licensed account doesn't have a UUID, they will write the commonly used name.<br>
 (People who have not directly contributed to the pack, but who have indirectly contributed to the pack, may also make this column)<br>
-(gengyoubo,8922cbbc-0c40-4262-b0b8-a153ec94ecdc)<br>
 FRZTXNO1,08cf0a8b-8367-4326-8101-e3c0f58a782a<br>
 cecnull1
